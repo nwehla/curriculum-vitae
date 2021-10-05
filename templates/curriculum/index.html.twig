@@ -6,15 +6,376 @@
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+    div{
+    border-radius: 15px;
+    border:solid 1px blue;
+    text-align: center;
+    margin-top: 10px;
+    background-color: ivory;
+}
+.adresse {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+   flex-wrap: wrap;
+    padding:15px;
+    /* Disposition du contenu sur une ligne */
+    justify-content:center;
+    
+    
+}
+#image{
+    margin-left:10px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border:none 5px blue;
+}
+img{
+    border-radius: 50%;
+    border:none;
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+  -webkit-box-shadow: 8px 8px 12px #aaa; 
+  box-shadow: 8px 8px 12px #555; 
+} 
+
+#contact{
+    margin-right:10px;
+    padding: 10px;
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+  -webkit-box-shadow: 8px 8px 12px #aaa; 
+  box-shadow: 8px 8px 12px #555; 
+  
+    color: ivory;
+    background-color: midnightblue;
+}
+body{
+    background-color:lightslategrey;
+    padding: 10px;
+}
+#sections{
+    
+    padding: 10px;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding:15px;
+    /* Disposition du contenu sur une ligne */
+    justify-content:space-evenly;
+}
+.sectiongauche{
+    width: 400px;
+    margin-left: 20px;
+    padding:20px;
+    background-color:rgba(66, 128, 209, 0.733);
+}
+.sectiondroite{
+    width: 1000px;
+    margin-right: 20px;
+    padding:20px;
+    background-color:rgba(47, 158, 223, 0.746);
+    border: none rgba(9, 94, 82, 0.733);
+}
+div h1{
+    
+    color:black
+}
+body{
+    max-width:1400 ;
+}
+.box{
+    
+    border: 5px solid #fff;
+  -moz-box-shadow: 8px 8px 12px #aaa; 
+  -webkit-box-shadow: 8px 8px 12px #aaa; 
+  box-shadow: 8px 8px 12px #555; 
+} 
+
+#recherche{
+    background-color: cornflowerblue;
+    border: 5px solid #fff;
+    color:ivory;
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;
+    padding-left: 20px;
+    width:1200px;
+}
+#recherche h3{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+#lesliens{
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;
+    padding: 20px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding:15px;
+    /* Disposition du contenu sur une ligne */
+    justify-content:space-evenly;
+
+}
+#liens1{
+    font: message-box;
+    color:rgba(33, 216, 207, 0.746);
+    background-color: rgba(150, 155, 168, 0.794);
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;
+    padding: 20px;
+    border: 3px solid black;
+    flex-wrap: wrap;
+    padding:15px;
+   
+}
+.iens{
+    font: message-box;
+    background-color: rgba(66, 209, 190, 0.733);
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; 
+    box-shadow: 8px 8px 12px #555;
+    padding: 20px;
+    border: 3px solid black;
+    display: flex;
+    padding:15px;
+   
+}
+.footer{
+    border-radius: 15px;
+    border:solid 5px blue;
+    text-align: center;
+    margin-top: 10px;
+    background-color:rgba(66, 209, 190, 0.733);
+    
+}
+#dev{
+    color: royalblue;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+
 </style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/symfony/curriculum-vitae/src/Controller/CurriculumController.php'|file_link(0) }}">src/Controller/CurriculumController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/symfony/curriculum-vitae/templates/curriculum/index.html.twig'|file_link(0) }}">templates/curriculum/index.html.twig</a></code></li>
-    </ul>
+<div class="box">
+    <h1>curriculum vitae</h1>
 </div>
+
+<div>
+    <div class=adresse>
+        <div class="form-group" id="contact">
+            <h2>CONTACT & ADRESSE</h2>
+            <p>Téléphone : 07.77.89.58.90</br>
+                E_mail : e.newh.pro@gmail.com</br>
+                Adresse : 7 les tilleuls résidence
+                </br>du parc,</br>
+                78150 Rocquencourt</br>
+            </p>
+        </div >
+
+        <div id="image">
+            <img src="images/photo.jpg" alt="nwehla valery" width="128">photo Nwehla valery</img>
+        </div>
+        <div id=recherche>
+            <h3>Recherche</h3>
+            <p>En,recherche de stage de fin </br>
+                de formation pour une durée</br>
+                de 4 mois : Du 01 Mars 2021 </br>
+                au 31 Juin 2022.</br> </p>
+        </div>
+    </div>
+    <div class="box">
+        <div id="dev">
+        <h2>Nwehla Emmanuel Valéry</h2>
+        <h1>Developpeur d'applications Web et Web Mobile</h1>
+    </div>
+    </div>
+    <div id="sections">
+        <div class="sectiongauche">
+            <form action="">
+
+                <div class="box">
+                    
+                        <h2>COMPÉTENCES INFORMATIQUES & BUREAUTIQUE</h2>
+                        <div>
+                            <h3>Programmation </h3>
+
+                                <ul>
+                                    <li>Php 7 (objet motif MVC)</li>
+                                    <li>Java SE</li>
+                                    <li>javascript</li>
+                                    
+                                </ul>
+                            </div>
+                    
+                </div>
+                <div class="box">
+                    <div>
+                        <h3> Serveurs de base de données</h3>
+                        <ul>
+                        <li>MySQL</li>
+                            
+                        </ul>
+                            
+                    </div>
+                </div>
+                <div class="box">
+                    <h3> Méthodologie</h3>
+        
+                    <ul>
+                        <li>Modèle entités - relations (Merise)</li>
+                        <li>UML  (unified modeling language)</li>
+                
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>
+                        Serveur Web </h3>
+                    <ul>
+                        <li>Apache</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>
+                        Technologies Web</h3>
+                    <ul>
+                        <li>Javascript </li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>  développement responsive</li>
+                        
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Outils de développement</h3>
+                    <ul>
+                        <li>VS Code
+                            
+                             </li>
+                        <li>Bureautique
+                            </li>
+                        <li>Word</li>
+                        <li> Excel</li>
+                    
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>
+                        LANGUES</h3>
+                    <ul>
+                        <li> Français</li>
+                        <li> Anglais : Moyen</li>
+                        <li>Braille : en cours d’acquisition</li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+        <div class="sectiondroite   ">
+            <form action="">
+                <div class="box">
+                    <div class="form-group box">
+                        <h2>Formations</h2>
+
+                        <h3>Année :2019 – 2022 </h3>
+                        <p>
+                            FORMATION PROFESSIONNELLE DÉVELOPPEMENT WEB ET WEB MOBILE
+                            </br>Centre De Formation Paul Et Liliane Guinot
+                        </p>
+                    </div>
+
+                    <div class="form-group box">
+                        <h2>Expériences Professionnelles</h2>
+                        <ul>
+                            <div class="box">
+                                </br>Année : 2018</br>COURSIER, EMPLOYÉ POLYVALENT
+                                BOULANGERIE PAUL</br>
+                                <p>
+                                    COURSIER, EMPLOYÉ POLYVALENT.</br>
+                                    BOULANGERIE PAUL.</br>
+                                    Livraison des produits de la boulangerie à pied.</br>
+                                    Travail en salle de préparation.</br>
+                                    Reconnaissance les différents produits de la boulangerie et de la pâtisserie.</br>
+                    
+                                </p>
+                            </div>
+                            <div class="form-group box">
+                                </br>Année : 2007 à 2017</br>
+                                <h3>Refonte de mon parcours de vie.</h3></br>
+                                <p>En avril 2007 , Suite à une série d'accidents de la circulation,</br>
+                                    j'ai du consulter un ophtalmologue et le diagnostique  </br>
+                                    tombe: perte de la vue de l'oeil droit, oeil gauche 6/10 eme d'accuité.</br>
+                                     En cause glaucome bilatéral.</br>
+                                   longue période pendant laquelle j'ai du affiné  mon futur retour à la vie ! </p>
+                            </div>
+                            <div class="form-group box">
+                                </br>Année : 2006 à 2007</br>AGENT PUBLICITAIRE
+                                </br>
+                                <p>
+                                    AGENT PUBLICITAIRE
+                                    Traitement de linéaires dans les centres commerciaux
+                                    -Pose et dépose de balise.
+                                    -Rayonnage.
+                                    -Pose et Dépose du matériel publicitaire.-Planning de commande
+                    
+                                </p>
+                            </div>
+                            <div class="form-group box">
+                                </br>Année : 2004 à 2007</br>ASSISTANT DE VIE</br>
+                                <p>
+                                    ASSISTANT DE VIE AUPRES DE PARTICULIERS
+                                    - Rencontre avec le patient et sa famille
+                                    -Evaluation des différentes tâches à prévoir
+                                    -Visites et courses
+                                    -Prise en charge des actes de la vie quotidienne
+                    
+                                </p>
+                            </div>
+                            <div class="form-group box">
+                                </br>Année : 2004 à 2007</br>CHAUFFEUR-LIVREUR</br>
+                                <p>
+                                    CHAUFFEUR-LIVREUR
+                                    STÉ. FRANÇOIS TRANSPORT, 93 SAINT-DÉNIS
+                                    -Livraison de presse et de boulangerie
+                                    -Colisage et dé-colisage
+                                    -Livraison des produits
+                                    -Organisation des tournées
+                                </p>
+                            </div>
+
+
+
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class='footer box'>
+    
+    <div class="form-group box">
+        <h3>Qualités & Défauts</h3>
+        
+            <p>Soigné,Créatif,Goût pour l’échange,Ponctuel</br>             
+              Rigoureux,Appliqué,Sérieux,jovial</p>
+    </div>
+    <div clas="form-group  box">
+        <h3>CENTRES D’INTÉRÊT</h3>
+        
+        <p>Musique :  Mélomane attentionné , la musique rythme ma vie.</br>
+Sport : Amateur de sport en général,Running ,  musculation , free ride(VTT).</br> 
+Voyage: Adore découvrir (pays,culture,échanger).</br>
+passion:le travail du cuir.</br>
+Culture générale.</br>
+</p>
+        </div>
+</div>
+
+
+
 {% endblock %}
